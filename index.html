@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Trainer</h1>
+        <p class="subtitle">Trenuj swoje umiejętności matematyczne</p>
+        
+        <div class="difficulty-container">
+            <label>Poziom trudności:</label>
+            <select id="difficulty">
+                <option value="easy">Łatwy</option>
+                <option value="medium">Średni</option>
+                <option value="hard">Trudny</option>
+            </select>
+        </div>
+        
+        <div class="operations">
+            <button class="operation-btn" data-op="+">➕</button>
+            <button class="operation-btn" data-op="-">➖</button>
+            <button class="operation-btn" data-op="*">✖</button>
+            <button class="operation-btn" data-op="/">➗</button>
+            <button class="operation-btn active" data-op="random">🔀</button>
+        </div>
+        
+        <p id="question">Generowanie działania...</p>
+        
+        <input type="number" id="answer" placeholder="Twoja odpowiedź">
+        
+        <div class="numpad">
+            <button onclick="addNumber(1)">1</button>
+            <button onclick="addNumber(2)">2</button>
+            <button onclick="addNumber(3)">3</button>
+            <button onclick="addNumber(4)">4</button>
+            <button onclick="addNumber(5)">5</button>
+            <button onclick="addNumber(6)">6</button>
+            <button onclick="addNumber(7)">7</button>
+            <button onclick="addNumber(8)">8</button>
+            <button onclick="addNumber(9)">9</button>
+            <button onclick="clearInput()">C</button>
+            <button onclick="addNumber(0)">0</button>
+            <button onclick="deleteLast()">⌫</button>
+        </div>
+        
+        <button class="check-btn" onclick="checkAnswer()">Sprawdź</button>
+        <p id="result"></p>
+        <p>Wynik: <span id="score">0</span></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

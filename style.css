@@ -1,0 +1,133 @@
+/* style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0D0D0D;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1A1A1A;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #FFD700;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #BBBBBB;
+}
+
+.difficulty-container {
+    margin: 15px 0;
+}
+
+select {
+    background: #222;
+    color: white;
+    border: 1px solid #FFD700;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.operations {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.operation-btn {
+    background: #222;
+    color: white;
+    border: 2px solid #FFD700;
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.operation-btn.active, .operation-btn:hover {
+    background: #FFD700;
+    color: black;
+}
+
+#question {
+    font-size: 22px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 15px auto;
+    max-width: 250px;
+}
+
+.numpad button {
+    background: #222;
+    color: white;
+    border: 2px solid #FFD700;
+    padding: 18px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.numpad button:hover {
+    background: #FFD700;
+    color: black;
+}
+
+.check-btn {
+    background: #FFD700;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.check-btn:hover {
+    background: white;
+    color: black;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
