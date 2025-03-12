@@ -1,5 +1,7 @@
 /* style.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #0D0D0D;
@@ -53,12 +55,9 @@ select {
 
 .operation-btn {
     background: #222;
-    color: white;
-    border: 2px solid #FFD700;
-    padding: 12px 16px;
+    padding: 8px 8px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 18px;
     transition: 0.3s;
 }
 
@@ -68,8 +67,8 @@ select {
 }
 
 #question {
-    font-size: 22px;
-    margin: 15px 0;
+    font-size: 36px;
+    margin: 20px 0;
     font-weight: bold;
 }
 
@@ -130,4 +129,10 @@ input[type="number"] {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
