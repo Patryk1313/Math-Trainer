@@ -19,6 +19,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     width: 400px;
+    height: 90vh;
 }
 
 h1 {
@@ -135,4 +136,17 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Tabliczka mnożenia */
+
+.multiplication-table-btn {
+    background: #FFD700;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabliczka Mnożenia</title>
+    <link rel="stylesheet" href="mutipication.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabliczka Mnożenia</h1>
+        <p class="subtitle">Zapamiętaj i ćwicz!</p>
+
+        <table class="multiplication-table">
+            <tbody>
+                <script>
+                    for (let i = 1; i <= 10; i++) {
+                        document.write("<tr>");
+                        for (let j = 1; j <= 10; j++) {
+                            document.write(`<td>${i} × ${j} = ${i * j}</td>`);
+                        }
+                        document.write("</tr>");
+                    }
+                </script>
+            </tbody>
+        </table>
+
+        <button class="back-btn" onclick="goBack()">Powrót</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

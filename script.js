@@ -63,13 +63,22 @@ function addNumber(num) {
     document.getElementById("answer").value += num;
 }
 
-function clearInput() {
-    document.getElementById("answer").value = "";
+function addMinus() {
+    let inputField = document.getElementById("answer");
+    if (inputField.value === "") {
+        inputField.value = "-";
+    } else if (!inputField.value.includes("-")) {
+        inputField.value = "-" + inputField.value;
+    }
 }
 
 function deleteLast() {
     let input = document.getElementById("answer").value;
     document.getElementById("answer").value = input.slice(0, -1);
+}
+
+function openMultiplicationPage() {
+    window.location.href = "multiplication.html";
 }
 
 window.onload = newQuestion;
